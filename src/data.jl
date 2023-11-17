@@ -5,8 +5,8 @@
 with `MLUtils` interface and is used to partition the dataset across the available
 processes.
 """
-struct DistributedDataContainer
-  data::Any
+struct DistributedDataContainer{D}
+  data::D
   idxs::Any
 end
 
